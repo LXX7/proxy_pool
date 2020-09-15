@@ -10,7 +10,7 @@ from aiohttp import ClientProxyConnectionError, ServerDisconnectedError, ClientO
 from asyncio import TimeoutError
 
 VALID_STATUS_CODES = [200]
-TEST_URL = 'http://www.gaobei.com'
+TEST_URL = 'http://www.baidu.com'
 BATCH_TEST_SIZE = 100
 
 
