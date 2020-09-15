@@ -3,7 +3,7 @@
 主函数：可以获取代理IP，测试代理IP
 
 1、修改测试地址，在tester.py里面修改：
-    TEST_URL = 'http://www.gaobei.com'
+    TEST_URL = 'http://www.baidu.com'
 
 2、获取、测试、接口模块的开关，在scheduler.py里面修改：
     TESTER_ENABLED = True
