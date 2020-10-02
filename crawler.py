@@ -44,32 +44,6 @@ class Crawler(object, metaclass=ProxyMetaclass):
 					port = tr.find('td:nth-child(2)').text()
 					yield ':'.join([ip, port])
 
-	# def crawl_proxy360(self):
-	# 	'''获取http://www.proxy360.cn/Region/China网站的代理'''
-
-	# 	start_url = 'http://www.proxy360.cn/Region/China'
-	# 	print('crawling',url)
-	# 	html = requests.get(url)
-	# 	if html:
-	# 		doc = pq(html)
-	# 		lines = doc('div[name="list_proxy_ip"]').items()
-	# 		for line in lines:
-	# 			ip = line.find('.tbBottomLine:nth-child(1)').text()
-	# 			port = line.find('.tbBottomLine:nth-child(2)').text()
-	# 			yield ':'.join([ip, port])
-
-	# def crawl_guobanjia(self):
-	# 	'''获取hhttp://www.guobanjia.com/free/gngn/index.html网站的代理'''
-
-	# 	start_url = 'http://www.guobanjia.com/free/gngn/index.html'
-	# 	print('crawling',url)
-	# 	html = requests.get(url)
-	# 	if html:
-	# 		doc = pq(html)
-	# 		tds = doc('td.ip"]').items()
-	# 		for td in tds:
-	# 			ip = td.find('p').remove()
-	# 			yield td.text().replace('', '')
 
 
 if __name__ == '__main__':
